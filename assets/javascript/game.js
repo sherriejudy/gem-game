@@ -10,7 +10,10 @@
 $(document).ready(function() {
   //Global Variables
   var randomnum = Math.floor(Math.random() * (120 - 19) + 19);
-  var crystalnum = Math.floor(Math.random() * (9 - 1) + 1);
+  var red = Math.floor(Math.random() * (9 - 1) + 1);
+  var blue = Math.floor(Math.random() * (9 - 1) + 1);
+  var yellow = Math.floor(Math.random() * (9 - 1) + 1);
+  var green = Math.floor(Math.random() * (9 - 1) + 1);
 
   var wins = 0;
   var losses = 0;
@@ -25,10 +28,10 @@ $(document).ready(function() {
 
   //Dom manipulation - JQuery
   $("#random").text(randomnum);
-  $("#red").text(crystalnum);
-  $("#blue").text(crystalnum);
-  $("#yellow").text(crystalnum);
-  $("#green").text(crystalnum);
+  $("#red").text(red);
+  $("#blue").text(blue);
+  $("#yellow").text(yellow);
+  $("#green").text(green);
   $("#totalscore").text(totalScore);
   $("#wins").text(wins);
   $("#losses").text(losses);
