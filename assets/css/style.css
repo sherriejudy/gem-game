@@ -34,8 +34,11 @@ body {
   font-weight: bold;
   margin-bottom: 1%;
 }
+
+#float {
+}
 #random {
-  background-color: green;
+  background-color: #8fbc8f;
   color: purple;
   width: 23%;
   float: left;
@@ -54,6 +57,7 @@ body {
   background-color: #008080;
   width: 23%;
   color: whitesmoke;
+  margin-bottom: 1%;
 }
 
 #totalscore {
