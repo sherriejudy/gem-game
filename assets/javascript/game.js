@@ -24,19 +24,21 @@ $(document).ready(function() {
 
   //Dom manipulation - JQuery
   $("#random").text(randomnum);
-  $("#crystals").text(crystalImages);
   $("#totalscore").text(totalScore);
   $("#wins").text(wins);
   $("#losses").text(losses);
 
   //Main////////////////////////////////////////////////////////////////////////////////
   function setData() {
+    // console.log(crystalImages[0]);
     for (var i = 0; i < crystalImages.length; i++) {
+      // console.log(i);
       var image = $("<img>");
       image.addClass("ghostImage");
       image.attr("src", crystalImages[i]);
-      image.attr("data-crystalvalue"), Math.floor(Math.random() * (12 - 1) + 1);
+      image.attr("data-crystalvalue", Math.floor(Math.random() * (12 - 1) + 1));
       $("#crystals").append(image);
+      // console.log(crystalImages[i]);
     }
   }
   setData();
@@ -50,16 +52,13 @@ $(document).ready(function() {
 
     if (totalScore === randomnum) {
       wins++;
-      $("#wins").text("Wins:" + " " + wins);
-      $("#outcome").text("WINNER!");
+      $("#wins").text(wins);
     } else if (totalScore > randomnum) {
       losses++;
-      $("#losses").text("Losses:" + " " + losses);
-      $("#outcome").text("You Lose!");
+      $("#losses").text(losses);
     }
     if (totalScore === randomnum || totalScore > randomnum) {
       // Select new random number
-      randomnum = Math.floor(Math.random() * (120 - 19) + 19);
       totalScore = 0;
       $("#random").text(randomnum);
       $("#totalscore").text(totalScore);

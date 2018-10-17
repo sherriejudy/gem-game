@@ -1,0 +1,59 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+body {
+  background-image: url("../images/background.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  /* padding-top: 2.5%; */
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  /* background-color: #40e0d0; */
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#heading {
+  background-color: #d2691e;
+  width: 28%;
+  color: whitesmoke;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#paragraph {
+  background-color: #fff8dc;
+  width: 42.5%;
+  padding: 20px 0 70px 0;
+  color: green;
+  font-weight: bold;
+}
+#random {
+  background-color: green;
+  color: purple;
+  width: 23%;
+  float: left;
+  font-size: large;
+  padding-bottom: 9.5%;
+}
+
+#winslosses {
+  background-color: #40e0d0;
+  width: 8%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+#finalText {
+  background-color: #008080;
+  width: 23%;
+  color: whitesmoke;
+}
+
+#totalscore {
+  background-color: #008080;
+  width: 23%;
+  color: whitesmoke;
+  padding-bottom: 8%;
+}
