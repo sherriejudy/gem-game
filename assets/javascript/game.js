@@ -16,10 +16,10 @@ $(document).ready(function() {
   var totalScore = 0;
 
   var crystalImages = [
-    "../images/red.jpg",
-    "../images/blue.jpg",
-    "../images/yellow.jpg",
-    "../images/green.jpg"
+    "./assets/images/red.jpg",
+    "./assets/images/blue.jpg",
+    "./assets/images/yellow.jpg",
+    "./assets/images/green.jpg"
   ];
 
   //Dom manipulation - JQuery
@@ -31,13 +31,41 @@ $(document).ready(function() {
 
   //Main////////////////////////////////////////////////////////////////////////////////
   function setData() {
-    var image = $("<img>");
-    image.addClass("ghostImage");
-    image.attr("src", crystalImages[i]);
-    image.attr("data-crystalvalue"), Math.floor(Math.random() * (12 - 1) + 1);
-    $("#crystals").append(image);
+    for (var i = 0; i < crystalImages.length; i++) {
+      var image = $("<img>");
+      image.addClass("ghostImage");
+      image.attr("src", crystalImages[i]);
+      image.attr("data-crystalvalue"), Math.floor(Math.random() * (12 - 1) + 1);
+      $("#crystals").append(image);
+    }
   }
+  setData();
+
+  $(".ghostImage").on("click", function() {
+    var crystalValue = $(this).data("crystalvalue");
+
+    totalScore = totalScore + crystalValue;
+
+    $("#totalscore").text(totalScore);
+
+    if (totalScore === randomnum) {
+      wins++;
+      $("#wins").text("Wins:" + " " + wins);
+      $("#outcome").text("WINNER!");
+    } else if (totalScore > randomnum) {
+      losses++;
+      $("#losses").text("Losses:" + " " + losses);
+      $("#outcome").text("You Lose!");
+    }
+    if (totalScore === randomnum || totalScore > randomnum) {
+      // Select new random number
+      randomnum = Math.floor(Math.random() * (120 - 19) + 19);
+      totalScore = 0;
+      $("#random").text(randomnum);
+      $("#totalscore").text(totalScore);
+    }
+  });
 });
 
 // for loop that interates through random crystal value 4 times
-// function that wil seperate img element for me <img>??
+// function that will seperate img element for me <img>??
