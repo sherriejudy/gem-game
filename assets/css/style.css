@@ -4,6 +4,9 @@ img {
   margin-bottom: 1%;
   margin-right: 1%;
 }
+#crystals {
+  clear: both;
+}
 body {
   background-image: url("../images/background.jpeg");
   background-position: center;
@@ -35,23 +38,24 @@ body {
   margin-bottom: 1%;
 }
 
-#float {
-}
 #random {
   background-color: #8fbc8f;
   color: purple;
   width: 23%;
   float: left;
   font-size: large;
-  padding-bottom: 9.5%;
+  padding-bottom: 9%;
+  font-size: 200%;
+  margin-right: 1%;
 }
 
 #winslosses {
   background-color: #40e0d0;
   width: 8%;
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-bottom: 2%;
   margin-bottom: 1%;
+  float: left;
 }
 #finalText {
   background-color: #008080;
@@ -65,4 +69,5 @@ body {
   width: 23%;
   color: whitesmoke;
   padding-bottom: 8%;
+  font-size: 200%;
 }
