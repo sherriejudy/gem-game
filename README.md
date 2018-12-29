@@ -1,4 +1,4 @@
-###Crystal Collector Game
+# Crystal Collector Game
 
 ```
 A fun and interactive game for web browsers. 
