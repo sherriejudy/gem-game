@@ -17,5 +17,4 @@ Don't go over the given value or else you lose!
 * Bootstrap
 * HTML
 * CSS
-
 ```
