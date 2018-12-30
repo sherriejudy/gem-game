@@ -1,7 +1,7 @@
 # Crystal Collector Game
 
 <h4> Demo: https://sherriejudy.github.io/gem-game/ </h4>
-<img src="https://i.imgur.com/Y7Wd3cK.png"></img>
+<img src="https://github.com/sherriejudy/gem-game/blob/master/assets/images/Gem%20Game.png"></img>
 
 ```
 A fun and interactive game for web browsers. 
