@@ -1,3 +1,7 @@
+#root {
+  text-align: center;
+  padding-top: 50px;
+}
 img {
   width: 100px;
   height: 100px;
@@ -5,9 +9,27 @@ img {
   margin-right: 1%;
 }
 body {
-  background-image: url('../images/background.jpeg');
+  background-image: url("../images/background.jpeg");
   background-position: center;
   background-repeat: repeat;
   /* padding-top: 2.5%; */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+.crystalImages {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.crystalImages:hover {
+  transform: rotate(135deg) scale(1.2);
+  transition: 0.5s all;
+}
+
+.crystalImages:active {
+  transform: rotate(135deg) scale(1);
+  transition: 0.2s all;
 }

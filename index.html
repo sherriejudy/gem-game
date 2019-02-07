@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,61 +8,81 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="card card-body">
-            <h1 class="display-4">Crystal Collector!</h1>
-            <br />
-            <p>
-                <a href="#description" data-toggle="collapse" class="btn btn-outline-info">Instructions</a>
-            </p>
-            <div class="collapse" id="description">
-                <div class="card card-body lead">
-                    You will be given a random number at the start. There are four
-                    crystals below. By clicking on a crystal you will add a specific
-                    amount of points to your total score. You will win the game by
-                    matching your total score to random number, you lose the game if
-                    your total score goes above the random number. The value of each
-                    crystal is hidden from you until you click on it. Each time when the
-                    game starts, the game will change the values of each crystal
-                </div>
-            </div>
+  <body>
+    <div class="container-fluid" id="root">
+      <div class="card card-body">
+        <h1 class="display-4">Crystal Collector!</h1>
+        <br />
+        <p>
+          <a
+            href="#description"
+            data-toggle="collapse"
+            class="btn btn-outline-info"
+            >Instructions</a
+          >
+        </p>
+        <div class="collapse" id="description">
+          <div class="card card-body lead">
+            You will be given a random number at the start. There are four
+            crystals below. By clicking on a crystal you will add a specific
+            amount of points to your total score. You will win the game by
+            matching your total score to random number, you lose the game if
+            your total score goes above the random number. The value of each
+            crystal is hidden from you until you click on it. Each time when the
+            game starts, the game will change the values of each crystal
+          </div>
         </div>
+      </div>
 
-        <div class="card card-body">
-            <h4 id="random"></h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Wins</th>
-                        <th>Losses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="wins"></td>
-                        <td id="losses"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div id="crystals"></div>
-            <div id="results">
-                <h4 id="totalscore"></h4>
-            </div>
+      <div class="card card-body">
+        <h4 id="random"></h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Wins</th>
+              <th>Losses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="wins"></td>
+              <td id="losses"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="crystals"></div>
+        <div id="results">
+          <h4 id="totalscore"></h4>
         </div>
+      </div>
     </div>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
